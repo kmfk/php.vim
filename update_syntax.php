@@ -161,7 +161,7 @@ foreach ($processed as $extension) {
 // Modified from original to allow this script to be run in repo directory
 // and place the file into the correct directory
 file_put_contents(
-	__DIR__ . '/.vim/syntax/php.vim',
+	__DIR__ . '/../.vim/syntax/php.vim',
 	str_replace('${code}', $code, file_get_contents(__DIR__ . '/syntax/php.template')),
 	LOCK_EX
 );
